@@ -8,23 +8,29 @@ namespace FileWatcherApp
 {
     public class WatchFile
     {
+        string temp = "";
         public void FileWatch()
         {
 
-            var watcher = new FileSystemWatcher(@"C:\ankit\my folder");
+            var watcher = new FileSystemWatcher(@"C:\ankit\excel folder")
             {
-                watcher.NotifyFilter = NotifyFilters.Attributes
-                                   | NotifyFilters.CreationTime
-                                   | NotifyFilters.DirectoryName
-                                   | NotifyFilters.FileName
-                                   | NotifyFilters.LastAccess
-                                   | NotifyFilters.LastWrite
-                                   | NotifyFilters.Security
-                                   | NotifyFilters.Size;
-                watcher.Filter = "*.*";
-                watcher.EnableRaisingEvents = true;
 
-            }
+                //watcher.NotifyFilter = NotifyFilters.Attributes
+                //                   | NotifyFilters.CreationTime
+                //                   | NotifyFilters.DirectoryName
+                //                   | NotifyFilters.FileName
+                //                   | NotifyFilters.LastAccess
+                //                   | NotifyFilters.LastWrite
+                //                   | NotifyFilters.Security
+                //                   | NotifyFilters.Size;
+                NotifyFilter = NotifyFilters.FileName | NotifyFilters.Size,
+
+
+                Filter = "*.*",
+                EnableRaisingEvents = true
+            };
+
+
 
 
             //watcher.Changed += OnRun;
@@ -41,13 +47,35 @@ namespace FileWatcherApp
 
         public  void OnRun(object sender, FileSystemEventArgs e)
         {
-            Console.WriteLine(e.ChangeType);
-            Console.WriteLine(e.Name);
-            string dir = @"C:\ankit\my folder\";
+            string dir = @"C:\ankit\excel folder\";
             string filename = e.Name;
             string fullPath = Path.Combine(dir, filename);
-            ReadExcal readExcal = new ReadExcal();
-            readExcal.ReadExcalData(fullPath);
+            if (temp == "")
+            {
+                ReadExcal readExcal = new();
+                readExcal.ReadExcalData(fullPath);
+                File.SetAttributes(fullPath, FileAttributes.Normal);
+                File.Delete(fullPath);
+                temp = fullPath; 
+             }
+            else if (temp != "" && temp != fullPath)
+            {
+                temp = ""; 
+             }
+            else
+            {
+                //second fire ignored.
+            }
+                //Console.WriteLine(e.ChangeType);
+                //Console.WriteLine(e.Name);
+                //string dir = @"C:\ankit\excel folder\";
+                //string filename = e.Name;
+                //string fullPath = Path.Combine(dir, filename);
+                //ReadExcal readExcal = new();
+                //readExcal.ReadExcalData(fullPath);
+                //File.SetAttributes(fullPath, FileAttributes.Normal);
+                //File.Delete(fullPath);
+
         }
 
 
