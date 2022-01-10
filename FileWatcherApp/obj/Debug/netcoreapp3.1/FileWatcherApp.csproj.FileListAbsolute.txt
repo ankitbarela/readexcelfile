@@ -1,0 +1,17 @@
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.exe
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.deps.json
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.runtimeconfig.json
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.runtimeconfig.dev.json
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.dll
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\FileWatcherApp.pdb
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.csproj.AssemblyReference.cache
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.AssemblyInfoInputs.cache
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.AssemblyInfo.cs
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.csproj.CoreCompileInputs.cache
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.dll
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.pdb
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.genruntimeconfig.cache
+C:\ankit\FileWatcherApp\FileWatcherApp\bin\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\Interop.Microsoft.Office.Interop.Excel.dll
+C:\ankit\FileWatcherApp\FileWatcherApp\obj\Debug\netcoreapp3.1\FileWatcherApp.csproj.ResolveComReference.cache
